@@ -1,19 +1,22 @@
-import React, { useMemo } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import logo1 from "../assets/logo.png";
 
-const NavbarComponent = React.memo((props) => {
+const NavbarComponent = React.memo(() => {
   return (
     <Navbar bg="primary" variant="dark">
       <Container>
-        <Navbar.Brand href="/">Tableau de bord</Navbar.Brand>
-        <Nav className="me-auto">
-          <Link to="home" className="nav-link">Accueil</Link>
-          <Link to="vehicules" className="nav-link">Véhicules</Link>
-          <Link to="sensors" className="nav-link">Capteurs</Link>
-        </Nav>
+        <Navbar.Brand style={{ height: "35px" }}>
+          <img
+            alt=""
+            src={logo1}
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+          />{" "}
+          Traffic dashboard
+        </Navbar.Brand>
       </Container>
     </Navbar>
   );

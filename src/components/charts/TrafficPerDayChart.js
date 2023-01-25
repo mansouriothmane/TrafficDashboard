@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactECharts from "echarts-for-react";
-import { fakeDataPerDay } from "../storage/data";
+import { fakeDataPerDay } from "../../storage/data";
 
 const TrafficPerDayChart = () => {
   const data = fakeDataPerDay;
 
-  console.log("fakeDataPerDay");
-  console.log(data);
-
   const options = {
+    title: {
+      text: "Entrées/sorties par jour",
+      left: "center",
+    },
     tooltip: {
       trigger: "axis",
       axisPointer: {
@@ -26,35 +27,26 @@ const TrafficPerDayChart = () => {
       type: "value",
     },
     legend: {
-      data: ["Ins", "Outs"],
+      data: ["Entrées", "Sorties"],
+      top: 30
     },
     series: [
       {
-        type: "line",
+        type: "bar",
         data: data.map((d) => d.in),
         stack: "ins",
-        name: "Ins",
-        stack: "Total",
-        areaStyle: {},
-        emphasis: {
-          focus: "series",
-        },
-        // barWidth: 5,
+        name: "Entrées",
+        barWidth: 5,
         itemStyle: {
           color: "#ff4136", // red
         },
       },
       {
-        type: "line",
+        type: "bar",
         data: data.map((d) => d.out),
         stack: "outs",
-        name: "Outs",
-        stack: "Total",
-        areaStyle: {},
-        emphasis: {
-          focus: "series",
-        },
-        // barWidth: 5,
+        name: "Sorties",
+        barWidth: 5,
         itemStyle: {
           color: "#f9d423", // yellow
         },
@@ -63,7 +55,7 @@ const TrafficPerDayChart = () => {
   };
 
   return (
-    <div className="charts-container">
+    <div>
       <ReactECharts option={options} />
     </div>
   );

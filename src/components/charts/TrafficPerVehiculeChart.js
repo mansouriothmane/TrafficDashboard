@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactECharts from "echarts-for-react";
-import { fakeDataPerVehicle } from "../storage/data";
+import { fakeDataPerVehicle } from "../../storage/data";
 
 const TrafficPerVehiculeChart = () => {
   const data = fakeDataPerVehicle;
 
-  console.log("fakeDataPerVehicule");
-  console.log(data);
-
   const options = {
+    title: {
+      text: "Entrées/sorties par type de véhicule",
+      left: "center",
+    },
     xAxis: {
       type: "category",
       data: data.map((d) => d.vehicleType),
@@ -17,15 +18,16 @@ const TrafficPerVehiculeChart = () => {
       type: "value",
     },
     legend: {
-      data: ["Ins", "Outs"],
+      data: ["Entrées", "Sorties"],
+      top: 30
     },
     series: [
       {
         type: "bar",
         data: data.map((d) => d.in),
         stack: "ins",
-        name: "Ins",
-        barWidth: 50,
+        name: "Entrées",
+        barWidth: 30,
         itemStyle: {
           color: "#ff4136", // red
         },
@@ -34,8 +36,8 @@ const TrafficPerVehiculeChart = () => {
         type: "bar",
         data: data.map((d) => d.out),
         stack: "outs",
-        name: "Outs",
-        barWidth: 50,
+        name: "Sorties",
+        barWidth: 30,
         itemStyle: {
           color: "#f9d423", // yellow
         },
@@ -44,7 +46,7 @@ const TrafficPerVehiculeChart = () => {
   };
 
   return (
-    <div className="charts-container">
+    <div>
       <ReactECharts option={options} />
     </div>
   );

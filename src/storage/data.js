@@ -13,7 +13,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 export let fakeDataPerDay = [];
-for (let i = 0; i < 32; i++) {
+for (let i = 1; i < 32; i++) {
     fakeDataPerDay.push({
         day: i,
         in: faker.datatype.number({ min: 0, max: 50 }),

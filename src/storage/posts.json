@@ -1,0 +1,102 @@
+{
+    "P2": {
+        "post": "P2",
+        "type": "RADAR-TAGMASTER",
+        "location": {
+            "latitude": 44.795955,
+            "longitude": -0.606845
+        }
+    },
+    "P3": {
+        "post": "P3",
+        "type": "RADAR-TAGMASTER",
+        "location": {
+            "latitude": 44.798725,
+            "longitude": -0.604840
+        }
+    },
+    "P4": {
+        "post": "P4",
+        "type": "RADAR-VIKING",
+        "location": {
+            "latitude": 44.801930,
+            "longitude": -0.598160
+        }
+    },
+    "P5": {
+        "post": "P5",
+        "type": "RADAR-VIKING",
+        "location": {
+            "latitude": 44.805100,
+            "longitude": -0.601285
+        }
+    },
+    "P9": {
+        "post": "P9",
+        "type": "TUBE-MIXTRA",
+        "location": {
+            "latitude": 44.808745,
+            "longitude": -0.596255
+        }
+    },
+    "P11": {
+        "post": "P11",
+        "type": "CAMERA",
+        "location": {
+            "latitude": 44.809855,
+            "longitude": -0.594220
+        }
+    },
+    "P15": {
+        "post": "P15",
+        "type": "TUBE-DELTA",
+        "location": {
+            "latitude": 44.804900,
+            "longitude": -0.605485
+        }
+    },
+    "P17": {
+        "post": "P17",
+        "type": "RADAR-VIKING",
+        "location": {
+            "latitude": 44.803100,
+            "longitude": -0.610180 
+        },
+        "location2": {
+            "latitude": 44.802955,
+            "longitude": -0.610320 
+        }
+    },
+    "P19": {
+        "post": "P19",
+        "type": "TUBE-MIXTRA",
+        "location": {
+            "latitude": 44.799970,
+            "longitude": -0.616420
+        }
+    },
+    "P23": {
+        "post": "P23",
+        "type": "TUBE-MIXTRA",
+        "location": {
+            "latitude": 44.792770,
+            "longitude": -0.619310
+        }
+    },
+    "P24": {
+        "post": "P24",
+        "type": "TUBE-MIXTRA",
+        "location": {
+            "latitude": 44.791040,
+            "longitude": -0.621735
+        }
+    },
+    "P26": {
+        "post": "P26",
+        "type": "TUBE-MIXTRA",
+        "location": {
+            "latitude": 44.792600,
+            "longitude": -0.613200
+        }
+    }
+}

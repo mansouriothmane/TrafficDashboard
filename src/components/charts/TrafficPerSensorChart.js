@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactECharts from "echarts-for-react";
-import { fakeDataPerSensor } from "../storage/data";
+import { fakeDataPerSensor } from "../../storage/data";
 
 const TrafficPerSensorChart = () => {
   const data = fakeDataPerSensor;
 
-  console.log("fakeDataPerSensor");
-  console.log(data);
-
   const options = {
+    title: {
+      text: "Entrées/sorties par type de capteur",
+      left: "center",
+    },
+    left: "center",
     xAxis: {
       type: "category",
       data: data.map((d) => d.sensorType),
@@ -17,15 +19,16 @@ const TrafficPerSensorChart = () => {
       type: "value",
     },
     legend: {
-      data: ["Ins", "Outs"],
+      data: ["Entrées", "Sorties"],
+      top: 30
     },
     series: [
       {
         type: "bar",
         data: data.map((d) => d.in),
         stack: "ins",
-        name: "Ins",
-        barWidth: 50,
+        name: "Entrées",
+        barWidth: 30,
         itemStyle: {
           color: "#ff4136", // red
         },
@@ -34,8 +37,8 @@ const TrafficPerSensorChart = () => {
         type: "bar",
         data: data.map((d) => d.out),
         stack: "outs",
-        name: "Outs",
-        barWidth: 50,
+        name: "Sorties",
+        barWidth: 30,
         itemStyle: {
           color: "#f9d423", // yellow
         },
@@ -44,7 +47,7 @@ const TrafficPerSensorChart = () => {
   };
 
   return (
-    <div className="charts-container">
+    <div>
       <ReactECharts option={options} />
     </div>
   );
