@@ -1,9 +1,9 @@
 import React from "react";
 import ReactECharts from "echarts-for-react";
-import { fakeDataPerSensor } from "../../storage/data";
+import { fakeDataPerSensorType } from "../../storage/data";
 
 const TrafficPerSensorChart = () => {
-  const data = fakeDataPerSensor;
+  const data = fakeDataPerSensorType;
 
   const options = {
     title: {

@@ -1,7 +1,7 @@
 import React from "react";
-import TrafficPerDayChart from "../components/charts/TrafficPerDayChart";
-import TrafficPerVehiculeChart from "../components/charts/TrafficPerVehiculeChart";
-import TrafficPerSensorChart from "../components/charts/TrafficPerSensorChart";
+import TrafficPerDayChart from "./charts/TrafficPerDayChart";
+import TrafficPerVehiculeChart from "./charts/TrafficPerVehiculeChart";
+import TrafficPerSensorChart from "./charts/TrafficPerSensorChart";
 
 const StatsComponent = () => {
   return (

@@ -39,12 +39,36 @@
             "longitude": -0.596255
         }
     },
+    "P10": {
+        "post": "P10",
+        "type": "CAMERA",
+        "location": {
+            "latitude": 44.809965,
+            "longitude": -0.595267
+        }
+    },
     "P11": {
         "post": "P11",
         "type": "CAMERA",
         "location": {
             "latitude": 44.809855,
             "longitude": -0.594220
+        }
+    },
+    "P12": {
+        "post": "P12",
+        "type": "CAMERA",
+        "location": {
+            "latitude": 44.809073,
+            "longitude": -0.592110
+        }
+    },
+    "P13": {
+        "post": "P13",
+        "type": "CAMERA",
+        "location": {
+            "latitude": 44.807627,
+            "longitude": -0.603279
         }
     },
     "P15": {
@@ -73,6 +97,14 @@
         "location": {
             "latitude": 44.799970,
             "longitude": -0.616420
+        }
+    },
+    "P20": {
+        "post": "P20",
+        "type": "CAMERA",
+        "location": {
+            "latitude": 44.797881,
+            "longitude": -0.619399
         }
     },
     "P23": {
