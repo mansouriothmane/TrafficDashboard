@@ -14,7 +14,7 @@ TrafficDashboard is a single-page application that visualizes campus traffic dat
 
 - Using Leaflet Maps, and working and focusing dynamically on pinned locations.
 
-## Instalation
+## Installation
 
 1. Clone the repository
 ```bash
